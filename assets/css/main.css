@@ -1083,10 +1083,16 @@ section {
 .team .team-member .member-img {
   position: relative;
   overflow: hidden;
-  border-radius: 50%;
+  /* border-radius: 50%; */
 }
 
-.team .team-member .social {
+.team .team-member .member-img img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* .team .team-member .social {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -1098,18 +1104,18 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
-.team .team-member .social a {
+/* .team .team-member .social a {
   transition: color 0.3s;
   color: #31547c;
   margin: 0 10px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
-.team .team-member .social a i {
+/* .team .team-member .social a i {
   line-height: 0;
 }
 
@@ -1120,7 +1126,7 @@ section {
 .team .team-member .social i {
   font-size: 18px;
   margin: 0 2px;
-}
+} */
 
 .team .team-member .member-info {
   padding: 25px 15px 0 15px;
@@ -1160,20 +1166,49 @@ section {
 }
 
 .services-cards .card-item {
-  border: 1px solid rgba(27, 47, 69, 0.1);
+  /* border: 1px solid rgba(27, 47, 69, 0.1); */
+  box-shadow: -4px -20px 6px -10px rgba(240,239,239,0.75);
   background: #fff;
   position: relative;
-  border-radius: 0;
+  border-radius: 10px;
 }
 
 .services-cards .card-item .card-bg {
-  min-height: 300px;
+  min-height: 200px;
   background-size: cover;
   background-repeat: no-repeat;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.services-cards .card-item .card-bg .p {
+  font-size: .8rem;
+  width: 70px;
+  border: 1px solid #1f98d1;
+  border-radius: 5px;
+  background-color: #1f98d1;
+  color: white;
+  text-align: center;
 }
 
 .services-cards .card-item .card-body {
-  padding: 30px;
+  padding: 10px;
+}
+
+.services-cards .card-item .card-body i {
+  color: #1f98d1;
+}
+
+.services-cards .card-item .card-body .p {
+  font-size: .8rem;
+}
+
+.services-cards .card-item .card-body .b {
+  gap: 1rem;
+}
+
+.services-cards .card-item .card-body .b i {
+  /* width: .2rem; */
 }
 
 .services-cards .card-item h4 {
